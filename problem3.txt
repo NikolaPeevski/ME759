@@ -1,0 +1,16 @@
+a)
+(gdb) print sizeof(p)
+$4 = 8
+
+b)
+(gdb) p &p
+$5 = (int **) 0x7fffffffd518
+
+c)
+(gdb) p &c
+$6 = 0x7fffffffd517 "\001"
+
+d)
+
+e)
+
