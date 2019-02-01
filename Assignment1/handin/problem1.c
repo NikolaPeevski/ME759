@@ -9,13 +9,13 @@ FILE *getFile(char *fileName) {
 }
 
 void leastFour() {
-    char fileName[12] = "student.txt";
+    char fileName[13] = "problem1.txt";
     char *result = malloc(4);
     int resultIterator = 0;
     FILE *file = getFile(fileName);
 
     if (file == NULL) {
-        printf("File %s not found!", fileName);
+        printf("File %s not found!\n", fileName);
     } else {
 
         int i = 0;
@@ -35,7 +35,7 @@ void leastFour() {
         for(int k = i - 4; k < i; k++) {
             printf("%c",*(content + k));
         }
-        printf(".");
+        printf(".\n");
     }
 }
 
