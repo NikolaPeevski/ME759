@@ -1,7 +1,3 @@
-#include <stdio.h>
-
-#include <stdlib.h>
-
 FILE *getFile(char *fileName) {
     FILE *_file = fopen(fileName, "r");
 
