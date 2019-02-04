@@ -119,6 +119,7 @@ void sort() {
         for(int i = 0; i <= high; i++) {
             printf ("Element %d at pos %d\n", arr[i], i);
         }
+        free(arr);
     }
 
 }
