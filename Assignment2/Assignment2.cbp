@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
 				<Option type="4"/>
@@ -37,8 +27,8 @@
 					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Assignment2">
-				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Assignment2" prefix_auto="0" extension_auto="0"/>
+			<Target title="problem3b">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3b" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -47,14 +37,14 @@
 					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 Assignment2"/>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem3b"/>
 					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="Assignment2/fast">
-				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Assignment2" prefix_auto="0" extension_auto="0"/>
+			<Target title="problem3b/fast">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3b" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -63,42 +53,165 @@
 					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 Assignment2/fast"/>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem3b/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem1a">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem1a"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem1a/fast">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem1a/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem3a">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem3a"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem3a/fast">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem3a/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem2a">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem2a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem2a"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem2a/fast">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem2a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem2a/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem1b">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem1b"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="problem1b/fast">
+				<Option output="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1b" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/."/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 problem1b/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -f &quot;/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/Makefile">
-			<Option target="Assignment2"/>
-		</Unit>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1.in">
-			<Option target="Assignment2"/>
-		</Unit>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1a">
-			<Option target="Assignment2"/>
-		</Unit>
 		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1a.c">
-			<Option target="Assignment2"/>
-		</Unit>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1b">
-			<Option target="Assignment2"/>
+			<Option target="problem1a"/>
 		</Unit>
 		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem1b.c">
-			<Option target="Assignment2"/>
-		</Unit>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem2a">
-			<Option target="Assignment2"/>
+			<Option target="problem1b"/>
 		</Unit>
 		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem2a.c">
-			<Option target="Assignment2"/>
+			<Option target="problem2a"/>
 		</Unit>
 		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3a.c">
-			<Option target="Assignment2"/>
+			<Option target="problem3a"/>
 		</Unit>
-		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/utils.c">
-			<Option target="Assignment2"/>
+		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/problem3b.c">
+			<Option target="problem3b"/>
 		</Unit>
 		<Unit filename="/Users/nikolapeevski/Repos/Uni/ME759/Assignment2/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

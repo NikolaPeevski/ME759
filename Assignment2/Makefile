@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named problem3b
+
+# Build rule for target.
+problem3b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 problem3b
+.PHONY : problem3b
+
+# fast build rule for target.
+problem3b/fast:
+	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/build
+.PHONY : problem3b/fast
+
+#=============================================================================
 # Target rules for targets named problem1a
 
 # Build rule for target.
@@ -270,6 +283,33 @@ problem3a.c.s:
 	$(MAKE) -f CMakeFiles/problem3a.dir/build.make CMakeFiles/problem3a.dir/problem3a.c.s
 .PHONY : problem3a.c.s
 
+problem3b.o: problem3b.c.o
+
+.PHONY : problem3b.o
+
+# target to build an object file
+problem3b.c.o:
+	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/problem3b.c.o
+.PHONY : problem3b.c.o
+
+problem3b.i: problem3b.c.i
+
+.PHONY : problem3b.i
+
+# target to preprocess a source file
+problem3b.c.i:
+	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/problem3b.c.i
+.PHONY : problem3b.c.i
+
+problem3b.s: problem3b.c.s
+
+.PHONY : problem3b.s
+
+# target to generate assembly for a file
+problem3b.c.s:
+	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/problem3b.c.s
+.PHONY : problem3b.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -277,6 +317,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... problem3b"
 	@echo "... problem1a"
 	@echo "... problem3a"
 	@echo "... rebuild_cache"
@@ -294,6 +335,9 @@ help:
 	@echo "... problem3a.o"
 	@echo "... problem3a.i"
 	@echo "... problem3a.s"
+	@echo "... problem3b.o"
+	@echo "... problem3b.i"
+	@echo "... problem3b.s"
 .PHONY : help
 
 

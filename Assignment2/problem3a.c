@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
         printf("Wrong input");
         return 0;
     }
-
+    remove("problem3.dat");
     int matrix = 0;
     int featureMatrix = 0;
     sscanf(argv[1], "%d", &matrix);
