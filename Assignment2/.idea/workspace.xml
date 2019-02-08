@@ -17,17 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9050f4a6-0cd2-4e07-b1c8-997682bd1875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/problem3b.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1a" beforeDir="false" afterPath="$PROJECT_DIR$/problem1a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1b" beforeDir="false" afterPath="$PROJECT_DIR$/problem1b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem2a" beforeDir="false" afterPath="$PROJECT_DIR$/problem2a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/problem3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/problem3.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3a" beforeDir="false" afterPath="$PROJECT_DIR$/problem3a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3a.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem3a.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3b" beforeDir="false" afterPath="$PROJECT_DIR$/problem3b" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/problem3b.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem3b.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -43,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/problem3b.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="110" column="125" selection-start-line="110" selection-start-column="125" selection-end-line="110" selection-end-column="125" />
+            <state relative-caret-position="300">
+              <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -121,6 +113,11 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -241,7 +238,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23352000" />
+    <option name="totallyTimeSpent" value="24087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -343,8 +340,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problem3b.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="110" column="125" selection-start-line="110" selection-start-column="125" selection-end-line="110" selection-end-column="125" />
+        <state relative-caret-position="300">
+          <caret line="112" column="28" selection-start-line="112" selection-start-column="28" selection-end-line="112" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

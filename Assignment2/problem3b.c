@@ -29,7 +29,7 @@ void parseFile(char *fileName, int matrixSize, int *matrixArray, int featureSize
         }
         i++;
         if (i == matrixSize && parsedMatrix != 1) {
-            printf("\n");
+//            printf("\n");
             i = 0;
             parsedMatrix = 1;
         }
@@ -38,13 +38,13 @@ void parseFile(char *fileName, int matrixSize, int *matrixArray, int featureSize
 
 int calcCorrelation(const int *matrix, int matrixSize, int startIndex, const int *featureMatrix, int featureSize) {
     int crossSum = 0;
-    printf("Startindex %d \n", startIndex);
+//    printf("Startindex %d \n", startIndex);
 
 
     for (int j = 0; j < featureSize; j++) {
         for(int i = 0; i < featureSize; i++) {
-            printf("Summing Matrix index %d with Feature index %d \n", (j * matrixSize) + startIndex + i, (j * featureSize) + i);
-            printf("Summing value: %d with value: %d \n", matrix[(j * matrixSize) + startIndex + i], featureMatrix[(j * featureSize) + i]);
+//            printf("Summing Matrix index %d with Feature index %d \n", (j * matrixSize) + startIndex + i, (j * featureSize) + i);
+//            printf("Summing value: %d with value: %d \n", matrix[(j * matrixSize) + startIndex + i], featureMatrix[(j * featureSize) + i]);
             crossSum += (matrix[(j * matrixSize) + startIndex + i] * featureMatrix[(j * featureSize) + i]);
         }
     }
@@ -69,20 +69,20 @@ void match(char *fileName, int matrixSize, int featureSize) {
     int *featureArray = malloc(featureQuad * sizeof(int));
 
     parseFile(fileName, matrixQad, matrixArray, featureQuad, featureArray);
-    printf("\n");
-    for (int l = 0; l < matrixSize; ++l) {
-        for (int i = 0; i < matrixSize; ++i) {
-            printf("%d ", matrixArray[matrixSize*l + i]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    for (int l = 0; l < featureSize; ++l) {
-        for (int i = 0; i < featureSize; ++i) {
-            printf("%d ", featureArray[featureSize*l + i]);
-        }
-        printf("\n");
-    }
+//    printf("\n");
+//    for (int l = 0; l < matrixSize; ++l) {
+//        for (int i = 0; i < matrixSize; ++i) {
+//            printf("%d ", matrixArray[matrixSize*l + i]);
+//        }
+//        printf("\n");
+//    }
+//    printf("\n");
+//    for (int l = 0; l < featureSize; ++l) {
+//        for (int i = 0; i < featureSize; ++i) {
+//            printf("%d ", featureArray[featureSize*l + i]);
+//        }
+//        printf("\n");
+//    }
 
 //    for (int m = 0; m < matrixQad; ++m) {
 //        printf("%d ", matrixArray[m]);
@@ -91,9 +91,9 @@ void match(char *fileName, int matrixSize, int featureSize) {
     int j = 0;
     for (int k = 0; k < matrixSize - featureSize + 1; k++) {
         for (int i = 0; i < matrixSize; i++) {
-            printf("Current depth %d\n", k * matrixSize);
+//            printf("Current depth %d\n", k * matrixSize);
             if (matrixSize > (i + (featureSize - 1))) {
-                printf("Fitting feature with start index: %d \n", (k * matrixSize) + i);
+//                printf("Fitting feature with start index: %d \n", (k * matrixSize) + i);
                 int _correlation = calcCorrelation(matrixArray,matrixSize, (k * matrixSize) + i, featureArray, featureSize);
 
                 if (_correlation > correlationVal || (correlationI == -1 && correlationJ == -1)) {
@@ -102,13 +102,15 @@ void match(char *fileName, int matrixSize, int featureSize) {
                     correlationJ = i;
                 }
 
-                printf("Correlation value: %d\n", correlationMatrix[j]);
+//                printf("Correlation value: %d\n", correlationMatrix[j]);
                 j++;
             }
         }
-        printf("\n");
+//        printf("\n");
     }
-    printf("The best correlation is %d with starting coordinates i %d and j %d", correlationVal, correlationI, correlationJ);
+    printf("%d\n", correlationI);
+    printf("%d\n", correlationJ);
+    printf("%d\n", correlationVal);
 }
 
 int main(int argc, char *argv[]) {
@@ -121,7 +123,7 @@ int main(int argc, char *argv[]) {
     sscanf(argv[1], "%d", &matrix);
     sscanf(argv[2], "%d", &featureMatrix);
 
-    printf("%s\n%s\n", argv[1], argv[2]);
+//    printf("%s\n%s\n", argv[1], argv[2]);
     match("problem3.dat", matrix, featureMatrix);
     return 0;
 }
