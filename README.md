@@ -7,6 +7,9 @@ https://uwmadison.app.box.com/s/jqxbytn6dyy45y5dq89nktplyz5lsclu
 # Assignment 2 Url
 https://uwmadison.app.box.com/s/kojxl4auy6axuddabfoidvmfyrr141i1
 
+# Assignment 3 Url
+https://uwmadison.app.box.com/s/055ahroj2qq4mz7qbowlu86qzacr86xa
+
 make todo:
 
 - Write simple make for 3 folders, problem1 C, problem2 C, problem 3 C++

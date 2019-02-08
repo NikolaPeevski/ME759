@@ -17,22 +17,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9050f4a6-0cd2-4e07-b1c8-997682bd1875" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assignment2.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1.in" beforeDir="false" afterPath="$PROJECT_DIR$/problem1.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1a" beforeDir="false" afterPath="$PROJECT_DIR$/problem1a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1a.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem1a.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1b" beforeDir="false" afterPath="$PROJECT_DIR$/problem1b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem1b.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem1b.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem2a" beforeDir="false" afterPath="$PROJECT_DIR$/problem2a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem2a.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem2a.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/problem3.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3a" beforeDir="false" afterPath="$PROJECT_DIR$/problem3a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3a.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem3a.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3b" beforeDir="false" afterPath="$PROJECT_DIR$/problem3b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/problem3b.c" beforeDir="false" afterPath="$PROJECT_DIR$/problem3b.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -48,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problem3a.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="23">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -60,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problem3b.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-443">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="29" />
+            <state relative-caret-position="-428">
+              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -77,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="150">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -100,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/problem1b.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+            <state relative-caret-position="473">
+              <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -112,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/problem1a.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+            <state relative-caret-position="472">
+              <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -125,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/problem2a.c">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
-              <caret line="72" selection-start-line="72" selection-end-line="73" selection-end-column="31" />
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -337,8 +323,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problem3a.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="23">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -347,8 +333,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problem3b.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-443">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="29" />
+        <state relative-caret-position="-428">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -357,15 +343,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/problem1a.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+        <state relative-caret-position="472">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -375,7 +361,7 @@
     <entry file="file://$PROJECT_DIR$/problem2a.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="72" selection-start-line="72" selection-end-line="73" selection-end-column="31" />
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -384,8 +370,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/problem1b.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="12" />
+        <state relative-caret-position="473">
+          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
