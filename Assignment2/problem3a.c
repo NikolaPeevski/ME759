@@ -1,5 +1,7 @@
+#include <stdio.h>
 #include <printf.h>
 #include <stdlib.h>
+#include <time.h>
 
 void generateMatrix(int size) {
 
@@ -11,9 +13,9 @@ void generateMatrix(int size) {
     {
         fptr = fopen("problem3.dat", "wba");
     }
-    printf("%d" ,size);
+
     int squareSize = size * size;
-    printf("%d", squareSize);
+
     srand(time(0));
 
     for(int i = 0; i < squareSize; i++) {
@@ -26,7 +28,6 @@ void generateMatrix(int size) {
             fprintf(fptr, " ");
         }
     }
-    fprintf(fptr, "\n");
     fclose(fptr);
 }
 
@@ -44,7 +45,6 @@ int main(int argc, char *argv[]) {
     int featureMatrix = 0;
     sscanf(argv[1], "%d", &matrix);
     sscanf(argv[2], "%d", &featureMatrix);
-    printf("%s\n%s\n", argv[1], argv[2]);
     generateMatrix(matrix);
     generateFeature(featureMatrix);
 

@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <printf.h>
 
@@ -63,7 +64,6 @@ void match(char *fileName, int matrixSize, int featureSize) {
     int correlationSize = (matrixSize - featureSize) + 1;
     int correlationQuad = correlationSize * correlationSize;
     int *correlationMatrix = malloc(correlationQuad * sizeof(int));
-    char *correlationLocation = malloc(correlationQuad * sizeof(int));
 
     int *matrixArray = malloc(matrixQad * sizeof(int));
     int *featureArray = malloc(featureQuad * sizeof(int));
@@ -111,6 +111,9 @@ void match(char *fileName, int matrixSize, int featureSize) {
     printf("%d\n", correlationI);
     printf("%d\n", correlationJ);
     printf("%d\n", correlationVal);
+    free(correlationMatrix);
+    free(matrixArray);
+    free(featureArray);
 }
 
 int main(int argc, char *argv[]) {

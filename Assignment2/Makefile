@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/nikolapeevski/Repos/Uni/ME759/Assignment2
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.13.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.13.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named problem3b
-
-# Build rule for target.
-problem3b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 problem3b
-.PHONY : problem3b
-
-# fast build rule for target.
-problem3b/fast:
-	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/build
-.PHONY : problem3b/fast
-
-#=============================================================================
 # Target rules for targets named problem1a
 
 # Build rule for target.
@@ -150,17 +137,30 @@ problem3a/fast:
 .PHONY : problem3a/fast
 
 #=============================================================================
-# Target rules for targets named problem2a
+# Target rules for targets named problem3b
 
 # Build rule for target.
-problem2a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 problem2a
-.PHONY : problem2a
+problem3b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 problem3b
+.PHONY : problem3b
 
 # fast build rule for target.
-problem2a/fast:
-	$(MAKE) -f CMakeFiles/problem2a.dir/build.make CMakeFiles/problem2a.dir/build
-.PHONY : problem2a/fast
+problem3b/fast:
+	$(MAKE) -f CMakeFiles/problem3b.dir/build.make CMakeFiles/problem3b.dir/build
+.PHONY : problem3b/fast
+
+#=============================================================================
+# Target rules for targets named problem2
+
+# Build rule for target.
+problem2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 problem2
+.PHONY : problem2
+
+# fast build rule for target.
+problem2/fast:
+	$(MAKE) -f CMakeFiles/problem2.dir/build.make CMakeFiles/problem2.dir/build
+.PHONY : problem2/fast
 
 #=============================================================================
 # Target rules for targets named problem1b
@@ -235,7 +235,7 @@ problem2a.o: problem2a.c.o
 
 # target to build an object file
 problem2a.c.o:
-	$(MAKE) -f CMakeFiles/problem2a.dir/build.make CMakeFiles/problem2a.dir/problem2a.c.o
+	$(MAKE) -f CMakeFiles/problem2.dir/build.make CMakeFiles/problem2.dir/problem2a.c.o
 .PHONY : problem2a.c.o
 
 problem2a.i: problem2a.c.i
@@ -244,7 +244,7 @@ problem2a.i: problem2a.c.i
 
 # target to preprocess a source file
 problem2a.c.i:
-	$(MAKE) -f CMakeFiles/problem2a.dir/build.make CMakeFiles/problem2a.dir/problem2a.c.i
+	$(MAKE) -f CMakeFiles/problem2.dir/build.make CMakeFiles/problem2.dir/problem2a.c.i
 .PHONY : problem2a.c.i
 
 problem2a.s: problem2a.c.s
@@ -253,7 +253,7 @@ problem2a.s: problem2a.c.s
 
 # target to generate assembly for a file
 problem2a.c.s:
-	$(MAKE) -f CMakeFiles/problem2a.dir/build.make CMakeFiles/problem2a.dir/problem2a.c.s
+	$(MAKE) -f CMakeFiles/problem2.dir/build.make CMakeFiles/problem2.dir/problem2a.c.s
 .PHONY : problem2a.c.s
 
 problem3a.o: problem3a.c.o
@@ -316,12 +316,12 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... problem3b"
 	@echo "... problem1a"
 	@echo "... problem3a"
-	@echo "... rebuild_cache"
-	@echo "... problem2a"
+	@echo "... problem3b"
+	@echo "... problem2"
 	@echo "... problem1b"
 	@echo "... problem1a.o"
 	@echo "... problem1a.i"

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
  *
@@ -27,15 +28,15 @@ int *parseFile(char *fileName, int *arrSize) {
 
     int elementCount = 1;
     fscanf(_file, "%d", &elementCount);
-    printf("%d Elements to add \n", elementCount);
-    int *res = malloc(elementCount);
+
+    int *res = malloc(elementCount * sizeof(int));
     int ch = -1;
     int i = 0;
     while (elementCount > 0 && fscanf(_file, "%d", &ch) == 1) {
         if (ch != -1) {
             *(res + i) = ch;
             elementCount--;
-            printf("%d element added at %d \n",ch, i);
+
             i++;
         }
     }
@@ -64,22 +65,20 @@ void sort() {
         int n = sizeof(arr)/sizeof(arr[0]);
         int low = 0;
         int high = arrSize - 1;
-        printf("%d\n",arrSize);
-
-        for(int i = 0; i <= high; i++) {
-            printf ("Element %d at pos %d\n", arr[i], i);
-        }
-        printf("\n");
+	printf("%d\n", arrSize);
         qsort(arr, arrSize, sizeof(int), comparator);
-        for(int i = 0; i <= high; i++) {
-            printf ("Element %d at pos %d\n", arr[i], i);
-        }
-        free(arr);
     }
 
 }
 
 int main() {
+    clock_t start, end;
+    double cpu_time_used;
+
+    start = clock();
     sort();
+    end = clock();
+    cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
+    printf("%lf", cpu_time_used);
     return 0;
 }
