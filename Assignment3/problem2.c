@@ -60,9 +60,8 @@ int main() {
     double frobNormA = 0;
 
     for (int l = 0; l < thrdSize*thrdSize; ++l) {
-        frobNormA += pow(2, thrdA[l]);
+        frobNormA += pow(thrdA[l], 2);
     }
-
     frobNormA = sqrt(frobNormA);
 
     //Reverse order, Assume CaseB
@@ -120,7 +119,7 @@ int main() {
     double frobNormB = 0;
 
     for (int l = 0; l < thrdSize*thrdSize; ++l) {
-        frobNormB += pow(2, thrdB[l]);
+        frobNormB += pow(thrdB[l], 2);
     }
 
     frobNormB = sqrt(frobNormB);
@@ -128,9 +127,14 @@ int main() {
     FILE *_file = fopen("problem2.txt", "w+");
 
     fprintf(_file, "%f,%f\n", frobNormA, frobNormB);
+
     fprintf(_file, "%zu\n", duration_usecA);
     fprintf(_file, "%zu", duration_usecB);
     fclose(_file);
+    free(frst);
+    free(scnd);
+    free(thrdA);
+    free(thrdB);
 	return 0;
 }
 
