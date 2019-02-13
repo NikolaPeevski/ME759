@@ -53,8 +53,8 @@ int main() {
 
     // We multiply seconds by 10^6 to convert to us
     size_t duration_usecA = (end.tv_sec - start.tv_sec) * 1000 * 1000;
-    // We divide nanoseconds by 10^3 to convert to us
-    duration_usecA += (end.tv_nsec - start.tv_nsec) / 1000;
+    // Multiply by 1e-6 to convert to milliseconds
+    duration_usecA += (end.tv_nsec - start.tv_nsec) * 1e-6;
 
     // Compute Frobenius norm
     double frobNormA = 0;
@@ -98,8 +98,8 @@ int main() {
 
     // We multiply seconds by 10^6 to convert to us
     size_t duration_usecB = (end.tv_sec - start.tv_sec) * 1000 * 1000;
-    // We divide nanoseconds by 10^3 to convert to us
-    duration_usecB += (end.tv_nsec - start.tv_nsec) / 1000;
+    // Multiply by 1e-6 to convert to milliseconds
+    duration_usecB += (end.tv_nsec - start.tv_nsec) * 1e-6;
 
     int comparator = 0;
     //Compare multiplications
