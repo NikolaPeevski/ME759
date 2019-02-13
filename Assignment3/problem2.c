@@ -15,7 +15,7 @@ int *generateMatrix(size_t size) {
 	size_t squareSize = size * size;
 	int *res = malloc(squareSize * sizeof(int));
 
-	srand(time(0));
+    srand(time(NULL));
 
 	for(int i = 0; i < squareSize; i++) {
 		res[i] = (rand() % 2 ? 1 : -1);
@@ -39,13 +39,17 @@ int main() {
 	int* thrdA = malloc(thrdSize * thrdSize * sizeof(int));
     struct timespec start;
     struct timespec end;
-
+    for (int m = 0; m < thrdSize*thrdSize; ++m) {
+        thrdA[m] = 0;
+    }
     // Get the starting timestamp
     clock_gettime(CLOCK_MONOTONIC, &start);
     //Compute multiplication
     for (int i = 0; i < frstRowSize; ++i) {
         for (int j = 0; j < frstRowSize; ++j) {
-            thrdA [(i * frstRowSize) + j] = frst[(i * frstRowSize) + j] * scnd[(j * frstRowSize) + i]  ;
+            for (int k = 0; k < frstRowSize; ++k) {
+                thrdA [(i * frstRowSize) + j] += frst[(i * frstRowSize) + k] * scnd[(j * frstRowSize) + k];
+            }
         }
     }
     // Get the ending timestamp
@@ -64,24 +68,6 @@ int main() {
     }
     frobNormA = sqrt(frobNormA);
 
-    //Reverse order, Assume CaseB
-
-    int *frstBuff = frst;
-
-    for (int i = 0; i < frstRowSize; ++i) {
-        for (int j = 0; j < frstRowSize; ++j) {
-            frst[(j * frstRowSize) + i] = frstBuff[(i * frstRowSize) + j];
-        }
-    }
-    int *scndBuff = scnd;
-
-    for (int i = 0; i < scndRowSize; ++i) {
-        for (int j = 0; j < scndRowSize; ++j) {
-            scnd[(i * scndRowSize) + j] = scndBuff[(j * scndRowSize) + i];
-        }
-    }
-
-
     int* thrdB = malloc(thrdSize * thrdSize * sizeof(int));
 
     // Get the starting timestamp
@@ -90,7 +76,9 @@ int main() {
     //Compute multiplication
     for (int i = 0; i < frstRowSize; ++i) {
         for (int j = 0; j < frstRowSize; ++j) {
-            thrdB[(i * frstRowSize) + j] = frst[(j * frstRowSize) + i] * scnd[(i * frstRowSize) + j]  ;
+            for (int k = 0; k < frstRowSize; ++k) {
+                thrdB [(i * frstRowSize) + j] += scnd[(i * frstRowSize) + k] * frst[(j * frstRowSize) + k];
+            }
         }
     }
     // Get the ending timestamp
@@ -112,7 +100,7 @@ int main() {
         }
     }
 
-    printf("The two multiplications are %s.", comparator == 0 ? "same" : "different");
+//    printf("The two multiplications are %s.", comparator == 0 ? "same" : "different");
 
 
     // Compute Frobenius norm
