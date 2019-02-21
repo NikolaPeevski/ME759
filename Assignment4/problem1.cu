@@ -20,7 +20,4 @@ int main() {
     for (int i = 0; i < threadSize*blockSize; i++) {
 	printf("%d\n", hostArray[i]);
 	}
-
-    free(dArray);
-    free(hostArray);
 }
