@@ -49,9 +49,10 @@
 //! @param g_odata  output data in global memory
 ////////////////////////////////////////////////////////////////////////////////
 // Matrix addition kernel thread specification
-__global__ void MatrixAddKernel(const float* Melems, const float alpha, const float* Nelems, const float beta, float* Pelems)
+__global__ void MatrixAddKernel(const float* Melems, const float alpha, const float* Nelems, const float beta, float* Pelems, int blockCount)
 {
-   // ADD YOUR CODE HERE
+//    int index =
+//    Pelems
 }
 
 #endif // #ifndef _MATRIXADD_KERNEL_H_

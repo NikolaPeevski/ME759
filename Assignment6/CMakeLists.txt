@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.08)
-
+set(CMAKE_CUDA_HOST_COMPILER $ENV{CU_CCBIN} CACHE PATH "Cuda host compiler dir")
 project(Assignment5)
 set (CMAKE_C_FLAGS "-std=c99 -lm")
 set(CMAKE_CXX_STANDARD 14)
